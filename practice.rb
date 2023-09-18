@@ -1,4 +1,5 @@
-name = "ayala" 
-puts name.upcase
-age = 20
-puts name + age.to_s
+number = 0
+while number <= 100
+    puts number 
+    number = number + 5
+end
