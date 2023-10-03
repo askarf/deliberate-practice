@@ -105,15 +105,66 @@ pp combined
 # Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 # For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
 
+numbers = [2, 8, 3]
+sum = []
+
+numbers.each do |number|
+    numbers.each do |number2|
+        sum << number * number2
+    end
+end
+
+pp sum
 
 # Use a nested loop to find the largest sum of any two different numbers within an array.
 # For example, [1, 8, 3, 10] becomes 18.
 
+numbers = [1, 8, 3, 10]
+largest = numbers[0]
 
-# Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+numbers.each do |number|
+    numbers.each do |number2|
+        if number != number2
+            if (number + number2) > largest
+                largest = number + number2
+            end
+        end
+    end
+end
+
+pp largest
+
+
+
+# Use nested loops with an array of numbers to compute a new 
+# array containing the first two numbers (from the original array) that add up to the number 10. 
+#If there are no two numbers that add up to 10, return false.
 # For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
+
+numbers = [2, 5, 3, 1, 0, 7, 11]
+two = "false"
+
+numbers.each do |number|
+    numbers.each do |number2|
+        if number != number2 && two == "false" && (number + number2 == 10)
+            two = [number, number2]
+        end
+    end
+end
+
+pp two
 
 
 # Use a nested loop to convert an array of string arrays into a single string.
 # For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
 
+words = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+tog = ""
+
+words.each do |set|
+    set.each do |word2|
+        tog << word2
+    end
+end
+
+pp tog
