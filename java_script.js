@@ -325,11 +325,27 @@ console.log(items);
 
 // Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+var books = { title: "i just wanna go home", author: "gordon korman", pages: 20, language: "eg" };
+console.log(books.title);
+console.log(books.author);
+console.log(books.pages);
+console.log(books.language);
+
 // Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-// Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the
+var diffBooks = [
+  { title: "i just wanna go home", author: "gordon korman", pages: 20, language: "eg" },
+  { title: "i love you", author: "ayala karf", pages: 200, language: "french" },
+  { title: "Kriyas shema", author: "Big rabbi", pages: 5, language: "hebrew" },
+];
+console.log(diffBooks[2].author);
 
+// Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the
 // result.
+
+var states = { newyork: "newyork", newjersy: "lakewood", queens: "farrockaway" };
+states["canada"] = "toronto";
+console.log(states);
 // Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
 // Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
