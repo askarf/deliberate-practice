@@ -348,8 +348,29 @@ states["canada"] = "toronto";
 console.log(states);
 // Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
+var laptop = { brand: "apple", model: "air", year: "2023" };
+console.log(laptop.brand);
+console.log(laptop.model);
+console.log(laptop.year);
+
 // Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+var laptops = [
+  { brand: "apple", model: "air", year: "2023" },
+  { brand: "apple", model: "pro", year: "2019" },
+  { brand: "windows", model: "flip", year: "2015" },
+];
+console.log(laptops[1].model);
 
 // Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+var wordss = { simcha: "happy", gelida: "ice cream" };
+wordss["layla"] = "night";
+console.log(wordss);
+
 // Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+var shirt = { brand: "lulu", color: "white", size: "six" };
+console.log(shirt.brand);
+console.log(shirt.color);
+console.log(shirt.size);
